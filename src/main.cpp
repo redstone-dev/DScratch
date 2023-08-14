@@ -11,8 +11,12 @@
 
 void Setup() {
     // all setup code goes here
-    NF_Set2D(SCREEN_BOTTOM, 0);
-    NF_SetRootFolder("DSCRATCH_ROOT");
+    NF_Set2D(SCREEN_TOP, 0);
+    NF_SetRootFolder("NITROFS");
+    NF_InitTiledBgBuffers();
+    NF_InitTiledBgSys(SCREEN_TOP);
+    NF_LoadTiledBg("Background", "Background", 256, 256);
+    NF_CreateTiledBg(0, 3, "Background");
     iprintf("dscratch\n");
 }
 
