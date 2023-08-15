@@ -1,4 +1,5 @@
 # devkitpro/nds-examples makefile, modified for use in dscratch
+# screw you windows users (jk but this only works on POSIX)
 
 #---------------------------------------------------------------------------------
 .SUFFIXES:
